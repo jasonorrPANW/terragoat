@@ -35,7 +35,7 @@ jobs:
         id: checkov
         uses: bridgecrewio/checkov-action@master
         env:
-          PRISMA_CLOUD_API_URL: ${{ secrets.PRISMA_CLOUD_API_URL }}
+          PRISMA_API_URL: ${{ secrets.PRISMA_API_URL }}
         with:
           api-key: ${{ secrets.BC_API_KEY }}
           use_enforcement_rules: true
